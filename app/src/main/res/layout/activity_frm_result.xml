@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D5886B02"
+    tools:context=".frmResult">
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="315dp"
+        android:layout_height="328dp"
+        android:layout_marginTop="64dp"
+        android:scaleType="centerInside"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_bulat" />
+
+    <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="410dp"
+        android:layout_height="283dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/bg_bawah" />
+
+    <ImageView
+        android:id="@+id/imageView19"
+        android:layout_width="206dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="64dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView14"
+        app:layout_constraintStart_toStartOf="@+id/imageView14"
+        app:layout_constraintTop_toTopOf="@+id/imageView14"
+        app:srcCompat="@drawable/skor" />
+
+    <ImageButton
+        android:id="@+id/btnGasneh"
+        android:layout_width="234dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="24dp"
+        android:background="@null"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/imageView17"
+        app:layout_constraintTop_toTopOf="@+id/imageView17"
+        app:srcCompat="@drawable/btn_gasneh" />
+
+    <ImageButton
+        android:id="@+id/btnExit2"
+        android:layout_width="230dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="32dp"
+        android:background="@null"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/imageView17"
+        app:layout_constraintTop_toBottomOf="@+id/btnGasneh"
+        app:srcCompat="@drawable/logo_exit" />
+
+    <TextView
+        android:id="@+id/tvTotalSkor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:textColor="#000000"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView14"
+        app:layout_constraintStart_toStartOf="@+id/imageView14"
+        app:layout_constraintTop_toBottomOf="@+id/imageView19" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
